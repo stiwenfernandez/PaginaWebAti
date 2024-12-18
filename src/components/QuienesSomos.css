@@ -1,0 +1,105 @@
+/* QuienesSomos.css */
+
+.quienes-somos-container {
+    padding: 2rem;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sección de introducción */
+  .quienes-somos-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .quienes-somos-intro h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .quienes-somos-intro p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Sección de servicios */
+  .servicios-container {
+    margin-top: 3rem;
+  }
+  
+  .servicios-titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: #e53e3e; /* Rojo para el título */
+    margin-bottom: 2rem;
+  }
+  
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .servicio-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .servicio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .servicio-icono {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e53e3e; /* Fondo rojo */
+    margin: 0 auto;
+  }
+  
+  .servicio-icono img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  
+  .servicio-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .servicio-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Estilos para los dispositivos móviles */
+  @media (max-width: 768px) {
+    .quienes-somos-intro h2 {
+      font-size: 2rem;
+    }
+  
+    .servicios-titulo {
+      font-size: 1.5rem;
+    }
+  
+    .servicio-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .servicio-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
