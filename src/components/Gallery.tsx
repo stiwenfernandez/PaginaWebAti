@@ -8,15 +8,15 @@ import { motion } from 'framer-motion';
 
 const images = [
   {
-    url: 'https://www.ati.net.co/img/gallery/400/EPGQ1110.JPG',
+    url: '/images/servicios-facturacion.jpg',
     title: 'Servicios Industriales'
   },
   {
-    url: 'https://www.ati.net.co/img/gallery/400/FFZS0653.JPG',
+    url: '/images/mantenimiento-especializado.jpg',
     title: 'Mantenimiento Especializado'
   },
   {
-    url: 'https://www.ati.net.co/img/gallery/400/FLAN3256.JPG',
+    url: '/images/Soluciones-tecnicas.jpg',
     title: 'Soluciones Técnicas'
   }
 ];

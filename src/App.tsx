@@ -9,38 +9,75 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import QuienesSomos from "./components/QuienesSomos";
 import { Calidad } from "./components/calidad";
-import { TrabajeConNosotros } from "./components/TrabajeConNosotros";
 import { PQRS } from "./components/PQRS";
-
+import { PoliticasPage } from "./pages/PoliticasPage";
+import { CarrerasPage } from "./pages/CarrerasPage";
+import { PQRSPage } from "./pages/PQRSPage";
+import { WhatsAppButton } from "./components/common/WhatsAppButton";
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen">
+      <div className="flex flex-col min-h-screen">
         <Header />
-        <main>
+        <main className="flex-grow pt-20">
           <Routes>
-            {/* Ruta principal */}
             <Route
               path="/"
               element={
-                <>
+                <div className="space-y-16">
                   <Hero />
                   <Services />
                   <Gallery />
                   <Clients />
                   <Contact />
-                </>
+                </div>
               }
             />
-            {/* Otras rutas */}
-            <Route path="/quienes-somos" element={<QuienesSomos />} />
-            <Route path="/calidad" element={<Calidad />} />
-            <Route path="/trabaje-con-nosotros" element={<TrabajeConNosotros/>} />
-            <Route path="/PQRS" element={<PQRS/>} />
+            <Route 
+              path="/quienes-somos" 
+              element={
+                <div className="container mx-auto px-4">
+                  <QuienesSomos />
+                </div>
+              } 
+            />
+            <Route 
+              path="/calidad" 
+              element={
+                <div className="container mx-auto px-4">
+                  <Calidad />
+                </div>
+              } 
+            />
+            <Route 
+              path="/politicas" 
+              element={
+                <div className="container mx-auto px-4">
+                  <PoliticasPage />
+                </div>
+              } 
+            />
+            <Route 
+              path="/carreras" 
+              element={
+                <div className="container mx-auto px-4">
+                  <CarrerasPage />
+                </div>
+              } 
+            />
+            <Route 
+              path="/pqrs" 
+              element={
+                <div className="container mx-auto px-4">
+                  <PQRSPage />
+                </div>
+              } 
+            />
           </Routes>
         </main>
         <Footer />
+        <WhatsAppButton />
       </div>
     </Router>
   );
